@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>Mi proyecto de tesis</title>
+    </head>
+
+    <body>
+    	<nav id="menu">
+    		<ul>
+    			<li><a href="introduccion.html">Introducción</a></li>
+    			<li><a href="marco_teorico.html">Marco teórico</a></li>
+    			<li><a href="desarrollo.html">Desarrollo</a></li>
+    			<li><a href="referencias.html">Referencias</a></li>
+    			<li><a class="prueba" href="instrucciones.html">Instrucciones</a></li>
+                <li><a class="prueba" href="pasos.html">Pasos</a></li>
+    		</ul>
+    	</nav>
+    	<section id="contenido">
+    		<h1>PASOS</h1>
+    		<cite>Por Iván M Quintanilla A</cite>
+    		<hr>
+            <h2>Descripción de los comandos git utilizados en cada punto</h2>                  
+
+            <h3>Punto 2.</h3>
+            <h4>git clone https://github.com/cerebritomultitarea/prueba-git.git</h4>
+            <p>clona el proyecto desde el repositorio de mi cuenta (github.com/cerebritomultitarea)</p>
+
+            <h3>Punto 3.</h3>
+            <h4>git commit -m "se incluye el archivo .gitignore"</h4>            
+            <p>se crea el archivo .gitignore, el cual contiene una instruccion para omitir las imagenes con extension jpg ubicadas en la carpeta imagenes</p>
+            
+            <h3>Punto 4.</h3>
+            <h4>git commit -m "se modifica el archivo introduccion.html"</h4>        
+            <p>se modifica el archivo introduccion.html en el repositorio local</p>
+            
+            <h4>git commit -m "se incluye el marco teorico"</h4>             
+            <p>se crea e incluye el archivo marco_teorico.html al repositorio local</p>
+            
+            <h4>git commit -m "se incluye el desarrollo"</h4>                
+            <p>se crea e incluye el archivo desarrollo.html al repositorio local</p>
+            
+            <h4>git commit -m "se incluyen las referencias"</h4>             
+            <p>se crea e incluye el archivo referencias.html al repositorio local</p>
+            
+            <h3>Punto 5.</h3>
+            <h4>git branch diseno</h4>                           
+            <p>se crea una nueva rama llamada "diseño"</p>
+            
+            <h4>git checkout diseno</h4>
+            <p>se cambia de rama master a rama diseno</p>
+            
+            <h4>git commit -m "se estilizan los enlaces del contenido"</h4>          
+            <p>se cambiar el color del texto de los enlaces del contenido y se les quita el subrayado</p>
+            
+            <h4>git commit -m "se agrega efecto hover a enlaces del contenido"</h4>      
+            <p>se agrega y estiliza el efecto hover de los enlaces del contenido</p>
+            
+            <h4>git checkout master</h4>                         
+            <p>se cambia de rama diseno a rama master</p>
+            
+            <h4>git merge diseno</h4>
+            <p>se fusiona la rama master con la rama diseno</p>
+
+    		<hr>
+    		<cite>Ejemplo del uso de Git</cite>
+    	</section>
+    </body>
+</html>
