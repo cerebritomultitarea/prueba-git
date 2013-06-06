@@ -63,6 +63,11 @@ body {
 	background: #c40;
 }
 
+#contenido a{
+	color:#000;
+	text-decoration:none; 
+}
+
 blockquote {
 	background: #ff9;
 	border: #666 2px dashed;
