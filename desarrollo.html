@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>Mi proyecto de tesis</title>
+    </head>
+
+    <body>
+    	<nav id="menu">
+    		<ul>
+    			<li><a href="introduccion.html">Introducción</a></li>
+    			<li><a href="marco_teorico.html">Marco teórico</a></li>
+    			<li><a href="desarrollo.html">Desarrollo</a></li>
+    			<li><a href="referencias.html">Referencias</a></li>
+    			<li><a class="prueba" href="instrucciones.html">Instrucciones</a></li>
+    		</ul>
+    	</nav>
+    	<section id="contenido">
+    		<h1>DESARROLLO</h1>
+    		<cite>Por Iván M Quintanilla A</cite>
+    		<hr>
+            <h2>Creando tablas en MySQL</h2>
+
+            <p>Creando tablas :</p>
+
+            <p>Una vez que has seleccionado la base de datos, podemos empezar a crear tablas. La sentencia CREATE es usado para crear una tabla en MySQL con restricciones. Una restricción es una cohibición para el comportamiento de una variable. </p>
+
+            <p>La sintaxis de Create es</p>
+
+            <p>CREATE TABLE tableName
+            (
+                fieldName1 dataType(size) [NULL | NOT NULL]
+                fieldName2 dataType(size) [NULL | NOT NULL]
+            ); </p>
+
+            <p>Si NULL está especificado, el campo se puede dejar vacío. Si NOT NULL está especificado, el campo debe tener un valor. En ausencia de NULL o NOT NULL, NULL es asumido.</p>
+
+            <p>El ejemplo siguiente te ayudará a crear una tabla:</p>
+
+            <p>CREATE TABLE student
+            (
+                studID INT(5),
+                name VARCHAR(30),
+            );</p>
+
+            <p>El ejemplo de la tabla de arriba creará una tabla student con campos ID y Name.</p>
+
+            <p>PRIMARY KEY :</p>
+
+            <p>PRIMARY KEY es un campo en una tabla que identifica unicamente un registro. Este atributo es usado para definir el nombre del campo para crear una clave primaria. </p>
+
+            <p>Ejemplo :</p>
+
+            <p>fieldName INT UNSIGNED AUTO_INCREMENT PRIMARY KEY</p>
+
+            <p>La PRIMARY KEY está especificada despues de definir los campos en el ejemplo siguiente:</p>
+
+            <p>CREATE TABLE student
+            (
+                studID INT UNSIGNED AUTO_INCREMENT,
+                name VARCHAR(30),
+                PRIMARY KEY(studID)
+            );</p>
+
+            <p>También podemos crear una clave primaria compuesta. Una clave primaria compuesta es cuando más de un campo es usado para identificar únicamente un registro. </p>
+
+            <p>Vamos a crear una tabla para mantener los detalles de student en una clase.</p>
+
+            <p>mysql> create table student(studid int(10), name varchar(20), address varchar(40), phone int(10));</p>
+            <p>Query OK, 0 rows affected (0.05 sec)</p>
+
+    		<hr>
+    		<cite>Ejemplo del uso de Git</cite>
+    	</section>
+    </body>
+</html>
