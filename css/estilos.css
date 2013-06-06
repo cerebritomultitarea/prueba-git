@@ -68,6 +68,11 @@ body {
 	text-decoration:none; 
 }
 
+#contenido a:hover{
+	color:#00f;
+	text-decoration:underline; 
+}
+
 blockquote {
 	background: #ff9;
 	border: #666 2px dashed;
